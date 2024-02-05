@@ -2,7 +2,9 @@ const Projet = ({ projet }) => {
     return (
         <section>
             <div className="row-multislide">
-                <video src={projet.video} controls></video>
+                <div className="video">
+                    <video src={projet.video} controls></video>
+                </div>
             </div>
             <div className="content">
                 <header>

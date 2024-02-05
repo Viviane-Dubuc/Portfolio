@@ -235,6 +235,11 @@ div.interface {
                         display: flex;
                         flex-direction: column;
 
+                        .video{
+                            display: flex;
+                            justify-content: center;
+                        }
+
                         img,
                         video {
                             border-radius: 0px;

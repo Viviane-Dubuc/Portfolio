@@ -206,6 +206,10 @@ div.interface main .projets .row-slide section .row-multislide {
   display: flex;
   flex-direction: column;
 }
+div.interface main .projets .row-slide section .row-multislide .video {
+  display: flex;
+  justify-content: center;
+}
 div.interface main .projets .row-slide section .row-multislide img,
 div.interface main .projets .row-slide section .row-multislide video {
   border-radius: 0px;

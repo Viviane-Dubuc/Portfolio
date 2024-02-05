@@ -16,9 +16,11 @@ const Projets = ({ projets }) => {
     return (
         <section>
             <div className="row-multislide">
-                {projets[index].img.includes("JPG") ? <img src={projets[index].img} alt="" /> : <video src={projets[index].img} controls></video>}
-                <span className="multislide-menu-left" onClick={() => handleClickLeft()}><AiOutlineArrowLeft /></span>
-                <span className="multislide-menu-right" onClick={() => handleClickRight()}><AiOutlineArrowRight /></span>
+                <div className="video">
+                    {projets[index].img.includes("JPG") ? <img src={projets[index].img} alt="" /> : <video src={projets[index].img} controls></video>}
+                </div>
+                <button className="multislide-menu-left" onClick={() => handleClickLeft()}><AiOutlineArrowLeft /></button>
+                <button className="multislide-menu-right" onClick={() => handleClickRight()}><AiOutlineArrowRight /></button>
             </div>
             <div className="content">
                 <header>

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import ProjetImages from "../components/ProjetImages";
 
 const projets = [
@@ -16,26 +15,17 @@ const projets = [
             { langage: "BandLab" }
         ]
     }, {
-        img: ["/JPG/Cryox/Menu.jpg", "/JPG/Cryox/Intro.jpg", "/JPG/Cryox/Tutoriel.jpg", "/JPG/Cryox/Jeu.jpg", "/JPG/Cryox/Defi.jpg", "/JPG/Cryox/Victoire.jpg", "/JPG/Cryox/Defaite.jpg"],
-        titre: "Jeu d'émergence procédural",
+        img: ["/JPG/Labo/Intro.jpg", "/JPG/Labo/Carte1.jpg", "/JPG/Labo/Carte2.jpg", "/JPG/Labo/Tutoriel.jpg", "/JPG/Labo/Instructions.jpg", "/JPG/Labo/Generique.jpg"],
+        titre: "Jeu compétitif à deux",
         competences: [
-            { competence: "Projet scolaire réalisé en équipe de 3. L'un était chargé de la modélisation 3D, l'autre, de la programmation des interactions, et moi, de l'intégration" },
-            { competence: "Pour plus de précision, mon rôle était d'intégrer les éléments produits par mes collègues, de réviser les éléments de programmation et de gérer l'équipe et les échéanciers" },
-            { competence: "Défi pendant lequel j'ai beaucoup grandi, car j'y ai appris à respecter les limites des autres, à gérer une équipe ayant des lacunes et à reconnaître mes faiblesses" }
+            { competence: "Projet scolaire réalisé en équipe de 2. L'un était chargé de la modélisation 3D, et moi, de la programmation de l'interactivité" },
+            { competence: "Travail produit en moins d'une semaine pour un total de 80 heures de travail" },
+            { competence: "Rédaction de scripts pour la programmation, réalisation de la musique et des éléments de UI, intégration des éléments 3D" }
         ],
         langages: [
-            { langage: "C# dans Unity" }
-        ]
-    }, {
-        img: ["/JPG/Petit/Menu.jpg", "/JPG/Petit/Cadenas.jpg", "/JPG/Petit/Marteau.jpg", "/JPG/Petit/Xylophone.jpg", "/JPG/Petit/Casse-tete.jpg"],
-        titre: "Jeu d'évasion en réalité virtuelle",
-        competences: [
-            { competence: "Projet scolaire réalisé en équipe de 4. Deux personnes étaient chargées des éléments visuels et les deux autres des éléments de programmation" },
-            { competence: "Pour plus de précision, mon rôle était d'intégrer les éléments produits par mes collègues et de programmer les différentes étapes par lesquelles le joueur devait passer pour parvenir à s'évader" },
-            { competence: "Fierté d'avoir produit un jeu en réalité virtuelle comportant des interactions diverses avec l'environnement" }
-        ],
-        langages: [
-            { langage: "C# dans Unity" }
+            { langage: "C# dans Unity" },
+            { langage: "Photoshop" },
+            { langage: "BandLab" }
         ]
     }
 ];
@@ -57,12 +47,6 @@ const JeuxVideo = () => {
                     <h3>Cryox</h3>
                     <div>
                         <ProjetImages projet={projets[1]}></ProjetImages>
-                    </div>
-                </div>
-                <div className="row-slide">
-                    <h3>Je suis petit maintenant!</h3>
-                    <div>
-                        <ProjetImages projet={projets[2]}></ProjetImages>
                     </div>
                 </div>
             </article>

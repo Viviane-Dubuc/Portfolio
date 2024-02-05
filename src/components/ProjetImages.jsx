@@ -17,8 +17,8 @@ const ProjetImages = ({ projet }) => {
         <section>
             <div className="row-multislide">
                 <img src={projet.img[index]} alt="" />
-                <span className="multislide-menu-left" onClick={() => handleClickLeft()}><AiOutlineArrowLeft /></span>
-                <span className="multislide-menu-right" onClick={() => handleClickRight()}><AiOutlineArrowRight /></span>
+                <button className="multislide-menu-left" onClick={() => handleClickLeft()}><AiOutlineArrowLeft /></button>
+                <button className="multislide-menu-right" onClick={() => handleClickRight()}><AiOutlineArrowRight /></button>
             </div>
             <div className="content">
                 <header>

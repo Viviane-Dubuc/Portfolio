@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import Projet from "../components/Projet";
 import Projets from "../components/Projets";
 
 const sorcery = [
@@ -66,7 +64,7 @@ const paris = [
         competences: [
             { competence: "Projet personnel entièrement réalisé par moi-même" },
             { competence: "Défi dans la création de composantes du corps avec des proportions à la fois réalistes, mais cartoonesques" },
-            { competence: "Animation d'un d'un personnage à partir d'un dessin existant" }
+            { competence: "Animation d'un personnage à partir d'un dessin existant" }
         ],
         langages: [
             { langage: "Animate" }
@@ -82,35 +80,6 @@ const paris = [
         ],
         langages: [
             { langage: "Photoshop" }
-        ]
-    }
-];
-
-const projets = [
-    {
-        video: "/MP4/Samba.mp4",
-        titre: "Modélisation et animation d'un personnage",
-        competences: [
-            { competence: "Projet scolaire entièrement réalisé par moi-même" },
-            { competence: "Défi dans lequel je devais produire un personnage low-poly en trois heures" },
-            { competence: "Modélisation, texturation et courte animation du personnage pour tester ses mouvements" }
-        ],
-        langages: [
-            { langage: "Blender" },
-            { langage: "Mixamo" },
-            { langage: "Unity" }
-        ]
-    },
-    {
-        video: "/MP4/Citronnade.mp4",
-        titre: "Motion design",
-        competences: [
-            { competence: "Projet scolaire entièrement réalisé par moi-même" },
-            { competence: "Fierté au niveau de l'originalité du projet et du soin de la présentation finale" },
-            { competence: "Animation et création d'éléments 2D pour une publicité d'un produit fictif" }
-        ],
-        langages: [
-            { langage: "After Effects" }
         ]
     }
 ];
@@ -138,18 +107,6 @@ const CreationsNumeriques = () => {
                     <h3>Paris</h3>
                     <div>
                         <Projets projets={paris}></Projets>
-                    </div>
-                </div>
-                <div className="row-slide">
-                    <h3>Samba</h3>
-                    <div >
-                        <Projet projet={projets[0]}></Projet>
-                    </div>
-                </div>
-                <div className="row-slide">
-                    <h3>Citronnade</h3>
-                    <div>
-                        <Projet projet={projets[1]}></Projet>
                     </div>
                 </div>
             </article>
