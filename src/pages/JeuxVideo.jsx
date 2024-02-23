@@ -27,6 +27,19 @@ const projets = [
             { langage: "Photoshop" },
             { langage: "BandLab" }
         ]
+    }, {
+        img: ["/JPG/Tomber/Intro.jpg", "/JPG/Tomber/Menu.jpg", "/JPG/Tomber/Niveau1.jpg", "/JPG/Tomber/Niveau2.jpg", "/JPG/Tomber/Niveau3.jpg", "/JPG/Tomber/Niveau4.jpg", "/JPG/Tomber/Niveau5.jpg", "/JPG/Tomber/Niveau6.jpg", "/JPG/Tomber/Victoire.jpg", "/JPG/Tomber/Defaite.jpg", "/JPG/Tomber/Generique.jpg"],
+        titre: "Jeu de stratégie",
+        competences: [
+            { competence: "Projet scolaire réalisé en équipe de 2. L'un était chargé de la modélisation 3D, et moi, de la programmation de l'interactivité" },
+            { competence: "Travail produit en moins de deux semaines pour un total de 120 heures de travail" },
+            { competence: "Rédaction de scripts pour la programmation, réalisation de la musique et des éléments de UI, intégration des éléments 3D" }
+        ],
+        langages: [
+            { langage: "C# dans Unity" },
+            { langage: "Photoshop" },
+            { langage: "BandLab" }
+        ]
     }
 ];
 
@@ -44,9 +57,15 @@ const JeuxVideo = () => {
                     </div>
                 </div>
                 <div className="row-slide">
-                    <h3>Cryox</h3>
+                    <h3>Se fondre dans son labo</h3>
                     <div>
                         <ProjetImages projet={projets[1]}></ProjetImages>
+                    </div>
+                </div>
+                <div className="row-slide">
+                    <h3>Tout doit tomber!</h3>
+                    <div>
+                        <ProjetImages projet={projets[2]}></ProjetImages>
                     </div>
                 </div>
             </article>

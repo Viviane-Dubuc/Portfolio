@@ -51,8 +51,16 @@ video {
 #creationsNumeriques {
   border-radius: 45px;
   margin-bottom: 15px;
-  padding: 50px;
+  padding: 25px;
   width: 100%;
+}
+@media (min-width: 1000px) {
+  #accueil,
+  #aPropos,
+  #jeuxVideo,
+  #creationsNumeriques {
+    padding: 50px;
+  }
 }
 
 #accueil,
@@ -87,9 +95,14 @@ div.interface header.header {
   position: fixed;
   background: #ffffff;
   color: #1E81B0;
-  padding: 18px 50px;
+  padding: 18px 25px;
   width: 100%;
   z-index: 99;
+}
+@media (min-width: 1000px) {
+  div.interface header.header {
+    padding: 18px 50px;
+  }
 }
 div.interface main {
   padding-top: 75px;
@@ -189,8 +202,13 @@ div.interface main #aPropos article.content a svg {
 div.interface main .projets .row-slide {
   border-radius: 45px;
   margin-bottom: 15px;
-  padding: 30px;
+  padding: 15px;
   width: 100%;
+}
+@media (min-width: 1000px) {
+  div.interface main .projets .row-slide {
+    padding: 30px;
+  }
 }
 div.interface main .projets .row-slide:last-of-type {
   margin-bottom: 0;
@@ -215,12 +233,11 @@ div.interface main .projets .row-slide section .row-multislide video {
   border-radius: 0px;
   -o-object-fit: contain;
      object-fit: contain;
-  height: 380px;
 }
 div.interface main .projets .row-slide section .row-multislide .multislide-menu-left,
 div.interface main .projets .row-slide section .row-multislide .multislide-menu-right {
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   margin: 15px;
 }
 div.interface main .projets .row-slide section .row-multislide .multislide-menu-left svg,
@@ -247,7 +264,7 @@ div.interface main .projets .row-slide section .row-multislide .multislide-menu-
   width: 60px;
 }
 div.interface main .projets .row-slide section .row-multislide .multislide-menu-left {
-  bottom: 190px;
+  bottom: 0px;
   left: 0;
 }
 @media (min-width: 1000px) {
@@ -256,7 +273,7 @@ div.interface main .projets .row-slide section .row-multislide .multislide-menu-
   }
 }
 div.interface main .projets .row-slide section .row-multislide .multislide-menu-right {
-  bottom: 190px;
+  bottom: 0px;
   right: 0;
 }
 @media (min-width: 1000px) {
