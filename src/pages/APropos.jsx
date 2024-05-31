@@ -1,8 +1,9 @@
 import { FaFilePdf } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const APropos = () => {
     return (
-        <section id="aPropos">
+        <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} id="aPropos">
             <article className="content">
                 <h2>À propos</h2>
                 <h3>Parce que j'ai du <span>plaisir</span> à apprendre!</h3>
@@ -12,7 +13,7 @@ const APropos = () => {
             <article>
                 <img src="/JPG/Viviane.jpg" alt="" />
             </article>
-        </section>
+        </motion.section>
     );
 };
 

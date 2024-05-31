@@ -202,13 +202,8 @@ div.interface main #aPropos article.content a svg {
 div.interface main .projets .row-slide {
   border-radius: 45px;
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 30px;
   width: 100%;
-}
-@media (min-width: 1000px) {
-  div.interface main .projets .row-slide {
-    padding: 30px;
-  }
 }
 div.interface main .projets .row-slide:last-of-type {
   margin-bottom: 0;
@@ -233,6 +228,7 @@ div.interface main .projets .row-slide section .row-multislide video {
   border-radius: 0px;
   -o-object-fit: contain;
      object-fit: contain;
+  height: 300px;
 }
 div.interface main .projets .row-slide section .row-multislide .multislide-menu-left,
 div.interface main .projets .row-slide section .row-multislide .multislide-menu-right {

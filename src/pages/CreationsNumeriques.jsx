@@ -1,4 +1,5 @@
 import Projets from "../components/Projets";
+import { motion } from "framer-motion";
 
 const sorcery = [
     {
@@ -86,7 +87,7 @@ const paris = [
 
 const CreationsNumeriques = () => {
     return (
-        <section id="creationsNumeriques" className="projets">
+        <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} id="creationsNumeriques" className="projets">
             <header>
                 <h2>Créations numériques</h2>
             </header>
@@ -110,7 +111,7 @@ const CreationsNumeriques = () => {
                     </div>
                 </div>
             </article>
-        </section>
+        </motion.section>
     );
 };
 

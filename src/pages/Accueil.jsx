@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Accueil = () => {
     return (
-        <section id="accueil">
+        <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} id="accueil">
             <article className="content">
                 <p>Je suis une</p>
                 <p className="sliding-title">intégratrice multimédia</p>
@@ -19,7 +19,7 @@ const Accueil = () => {
                 <p>Découvrez mon <span>Demo reel</span></p>
                 <video src="/MP4/CV-VIDÉO.mp4" controls></video>
             </article>
-        </section >
+        </motion.section >
     );
 };
 
